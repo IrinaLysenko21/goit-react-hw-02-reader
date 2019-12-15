@@ -1,0 +1,34 @@
+@value variables: '../../variables.module.css';
+@value primary-box-shadow, primary-font-stack from variables;
+
+.controls {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.btn {
+  margin-right: 15px;
+  padding: 10px 20px;
+  font-family: primary-font-stack;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: rgb(14, 155, 173);
+  border: none;
+  border-radius: 5px;
+  box-shadow: primary-box-shadow;
+  cursor: pointer;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
+
+.disabled {
+  composes: btn;
+  color: #889199;
+  background-color: #caf0f3;
+  cursor: auto;
+}

@@ -1,0 +1,28 @@
+@value variables: '../../variables.module.css';
+@value primary-font-stack, color-dark-grey, color-light-grey from variables;
+
+.publication {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.title,
+.text {
+  font-family: primary-font-stack;
+}
+
+.title {
+  font-size: 30px;
+  color: color-dark-grey;
+}
+
+.text {
+  font-family: primary-font-stack;
+}
+
+@media (min-width: 768px) {
+  .publication {
+    width: 60%;
+  }
+}

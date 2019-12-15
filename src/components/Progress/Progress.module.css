@@ -1,0 +1,8 @@
+@value variables: '../../variables.module.css';
+@value color-dark-grey from variables;
+
+.progress {
+  font-size: 28px;
+  text-align: center;
+  color: color-dark-grey;
+}
