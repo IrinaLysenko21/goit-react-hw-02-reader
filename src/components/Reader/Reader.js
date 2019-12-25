@@ -50,7 +50,11 @@ class Reader extends Component {
           currentPage={publicationIndex + 1}
           totalPages={items.length}
         />
-        <Publication title={publication.title} text={publication.text} />
+        <Publication
+          title={publication.title}
+          text={publication.text}
+          index={publicationIndex}
+        />
       </div>
     );
   }
